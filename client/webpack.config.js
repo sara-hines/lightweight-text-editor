@@ -3,7 +3,6 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
 
-
 module.exports = () => {
     return {
         mode: 'development',
@@ -19,7 +18,6 @@ module.exports = () => {
             path: path.resolve(__dirname, 'dist'),
         },
         plugins: [
-            // I ADDED THIS AND GAVE IT title: 'JATE'.
             new HtmlWebpackPlugin({
                 template: './index.html',
                 title: 'JATE'

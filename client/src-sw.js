@@ -43,7 +43,7 @@ registerRoute(
             // Limit the entries in the cache to 60 and set a 30 day expiration 
             new ExpirationPlugin({
                 maxEntries: 60,
-                maxAgeSeconds: 30 * 24 * 60 * 60, 
+                maxAgeSeconds: 30 * 24 * 60 * 60,
             })
         ],
     })

@@ -6,28 +6,29 @@ import '../css/style.css';
 const main = document.querySelector('#main');
 main.innerHTML = '';
 
+// Loading spinner to be used if there is an issue/delay getting the editor
 const loadSpinner = () => {
-  const spinner = document.createElement('div');
-  spinner.classList.add('spinner');
-  spinner.innerHTML = `
+    const spinner = document.createElement('div');
+    spinner.classList.add('spinner');
+    spinner.innerHTML = `
   <div class="loading-container">
   <div class="loading-spinner" />
   </div>
   `;
-  main.appendChild(spinner);
+    main.appendChild(spinner);
 };
 
 const editor = new Editor();
 
 if (typeof editor === 'undefined') {
-  loadSpinner();
+    loadSpinner();
 }
 
 // Check if service workers are supported
 if ('serviceWorker' in navigator) {
-  // register workbox service worker
-  const workboxSW = new Workbox('/src-sw.js');
-  workboxSW.register();
+    // register workbox service worker
+    const workboxSW = new Workbox('/src-sw.js');
+    workboxSW.register();
 } else {
-  console.error('Service workers are not supported in this browser.');
+    console.error('Service workers are not supported in this browser.');
 }

@@ -24,7 +24,6 @@ export const putDb = async (content) => {
     const request = store.put({ id: 1, value: content })
     const result = await request;
     if (result) {
-        console.log(`Data saved to the database: \n`, result); 
         return result;
     } else {
         console.error('Sorry, there was an error when attempting to add content to the database.');
@@ -40,7 +39,6 @@ export const getDb = async () => {
     const request = store.getAll();
     const result = await request;
     if (result) {
-        console.log('result.value', result);
         return result?.value;
     } else {
         console.error('Sorry, there was an error when attempting to GET all from the database.');
