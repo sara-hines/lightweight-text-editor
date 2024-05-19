@@ -103,7 +103,7 @@ This PWA app starts and runs quickly, allowing you to quickly reference or modif
 
 ### Installation
 
-Installation is optional for this PWA application. To run the application in the browser, navigate to [PUT THE ACTUAL RENDER URL HERE]. If you would like to use the application as a desktop app, once you've navigated to the app in the browser, click the install button. You will then be able to access the app from the icon added to your desktop.
+Installation is optional for this PWA application. To run the application in the browser, navigate to [https://lightweight-text-editor.onrender.com/](https://lightweight-text-editor.onrender.com/). If you would like to use the application as a desktop app, once you've navigated to the app in the browser, click the install button. You will then be able to access the app from the icon added to your desktop.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,12 +112,15 @@ Installation is optional for this PWA application. To run the application in the
 <!-- USAGE EXAMPLES -->
 ## Usage and Features
 
+<br />
+
 ### Service Workers and Caching
 
 <br />
 
-
-![alt text](./client/src/images/service-worker.png)
+<div align="center"> 
+<img src="./client/src/images/service-worker.png" width="700">
+</div>
 
 <br />
 
@@ -131,24 +134,49 @@ There are many options for configuring service workers, from registering routes 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Upon navigating to [PUT THE ACTUAL RENDER URL HERE], you will see a text editor application with the heading "JATE: Light, flexible text editor." No need to navigate through any file structure or create a new document—just start coding! In the below screenshot, a reusable function to calculate area, diameter, etc. has been entered into the text editor for demonstration purposes (this code snippet courtesy of [Sobit Prasad at FreeCodeCamp](https://www.freecodecamp.org/news/higher-order-functions-in-javascript-explained/#:~:text=A%20higher%20order%20function%20is%20a%20function%20that%20takes%20one,functions%20like%20map%20and%20reduce.)). The built-in JavaScript syntax highlighting improves code readability and helps prevent syntax errors.
+Upon navigating to [https://lightweight-text-editor.onrender.com/](https://lightweight-text-editor.onrender.com/), you will see a text editor application with the heading "JATE: Light, flexible text editor." No need to navigate through any file structure or create a new document—just start coding! In the below screenshot, a reusable function to calculate area, diameter, etc. has been entered into the text editor for demonstration purposes (this code snippet is courtesy of [Sobit Prasad at FreeCodeCamp](https://www.freecodecamp.org/news/higher-order-functions-in-javascript-explained/#:~:text=A%20higher%20order%20function%20is%20a%20function%20that%20takes%20one,functions%20like%20map%20and%20reduce.)). The built-in JavaScript syntax highlighting improves code readability and helps prevent syntax errors.
 
+<br />
 
+<div align="center"> 
+<img src="./client/src/images/first-code-snippet.png" width="700">
+</div>
 
+<br />
 
-If you close the browser and open the application again, your code snippet will have persisted and will be visible when you return. 
+If you close the browser and open the application again, your code snippet will have persisted and will be visible when you return, as in the below screenshot. 
 
-[GET A SCREENSHOT OF HAVING NAVIGATED AWAY AND BACK AND GETTING THE SAME TEXT. PUT IT HERE.]
+<br />
 
+<div align="center"> 
+<img src="./client/src/images/persistence.png" width="700">
+</div>
 
+<br />
 
 If you'd like to use the app as a desktop application, click the install button. The desktop app will open automatically and can be accessed from an icon on your desktop (you may need to allow certain device-specific permissions to add a desktop icon). The below 2 screenshots show the installed desktop app (along with installation options available) and the icon created on the desktop.
 
+<br />
+
+<div align="center"> 
+<img src="./client/src/images/installed-app.png" width="700">
+</div>
+
+<br />
+
+<div align="center"> 
+<img src="./client/src/images/jate-desktop-icon.png" width="700">
+</div>
+
+<br />
 
 As you work with your reference material, notes, or code snippets, any changes you make will be reflected in the IndexedDB storage and localStorage. In the below screenshot, the reusable function to calculate area and diameter has been changed to a function to just calculate diameter (code snippet courtesy of [Sobit Prasad at FreeCodeCamp](https://www.freecodecamp.org/news/higher-order-functions-in-javascript-explained/#:~:text=A%20higher%20order%20function%20is%20a%20function%20that%20takes%20one,functions%20like%20map%20and%20reduce.)). As in the previous example, the data is saved so it is available when you need it again!
 
+<br />
 
-
+<div align="center"> 
+<img src="./client/src/images/updated-code-snippet.png" width="700">
+</div>
 
 <br />
 
