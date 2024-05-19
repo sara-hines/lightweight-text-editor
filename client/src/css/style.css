@@ -8,6 +8,10 @@
   --navbar-height: 50px;
 }
 
+html {
+    height: 100vh;
+}
+
 body {
   margin: 0;
   background-color: var(--monoaki);
