@@ -27,7 +27,6 @@ export default class {
         setTimeout(() => {
             getDb().then((data) => {
                 console.info('Loaded data from IndexedDB, injecting into editor');
-                console.log(data);
                 this.editor.setValue(data || localData || header);
             })
 
